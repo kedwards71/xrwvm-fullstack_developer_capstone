@@ -141,3 +141,53 @@ img{
 #navbarText.show a:hover{
     color:red;
 }
+
+.about-us-card-container{
+    display: flex;
+    flex-direction: row; 
+    margin:auto
+}
+.about-us-card-container .card-img-top{
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-us-card-container .card{
+    width: 30%;
+}
+
+@media (max-width:1288px) {
+    .about-us-card-container{
+        flex-direction: column;
+        font-size: 2rem;
+    }
+    .about-us-card-container .card-body{
+        width: 100%;
+    }
+    .about-us-card-container .card{
+        align-self: center;
+        width: 70%;
+        object-fit: cover;
+    }
+    .about-us-card-container .card-img-top{
+        width:70%;
+    }
+}
+
+@media (max-width:600px) {
+    .about-us-card-container{
+        flex-direction: column;
+        font-size: 1.75rem;
+    }
+    .about-us-card-container .card-body{
+        width: 100%;
+    }
+    .about-us-card-container .card{
+        align-self: flex-start;
+        width: 60%;
+
+    }
+    .about-us-card-container .card-img-top{
+        width:100%;
+    }
+}
