@@ -124,3 +124,20 @@ img{
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
 }
+#navbarText{
+    text-align: center;
+}
+#navbarText.show{
+    transition: all 0.5s ease-out;
+    z-index:999;
+    background-color:rgba(0,0,0,0.3);
+    height: 500px;
+}
+
+#navbarText.show a{
+    color:white;
+}
+
+#navbarText.show a:hover{
+    color:red;
+}
