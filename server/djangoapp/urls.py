@@ -27,14 +27,12 @@ urlpatterns = [
     path(
         route='get_cars',
         view=views.get_cars,
-        name='getcars'
-        ),
-    # path for dealer reviews view
+        name='getcars'),
+    # path for get dealers
     path(
         route='get_dealers',
         view=views.get_dealerships,
-        name='get_dealers'
-        ),
+        name='get_dealers'),
     path(
         route='get_dealers/<str:state>',
         view=views.get_dealerships,
