@@ -34,7 +34,7 @@ ALLOWED_HOSTS = [
     +'.proxy.cognitiveclass.ai')
     ]
 CSRF_TRUSTED_ORIGINS = [
-    ('https://khaemonedwar-8000.theianext-1-labs-prod-misc-tools-us-east-0
+    ('https://khaemonedwar-8000.theianext-1-labs-prod-misc-tools-us-east-0'
     +'.proxy.cognitiveclass.ai')
 ]
 
