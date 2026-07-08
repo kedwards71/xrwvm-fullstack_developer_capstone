@@ -78,10 +78,10 @@ def registration(request):
             email=email)
         # Login the user and redirect to list page
         login(request, user)
-        data = {"userName": username "status": "Authenticated"}
+        data = {"userName": username, "status": "Authenticated"}
         return JsonResponse(data)
     else :
-        data = {"userName": username "error": "Already Registered"}
+        data = {"userName": username, "error": "Already Registered"}
         return JsonResponse(data)
 # ...
 # get_cars view to render the list of cars
