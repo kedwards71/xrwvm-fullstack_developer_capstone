@@ -15,6 +15,7 @@ class CarMake(models.Model):
     description = models.TextField()
     # - Any other fields you would like to include in car make model
     # - __str__ method to print a car make object
+
     def __str__(self):
         return self.name
 
@@ -35,7 +36,8 @@ class CarModel(models.Model):
     ]
     type = models.CharField(max_length=19, choices=CAR_TYPES, default='SUV')
     # - Year (IntegerField) with min value 2015 and max value 2023
-    year = models.IntegerField(default=2023,
+    year = models.IntegerField(
+        default=2023,
         validators=[
             MaxValueValidator(2023),
             MinValueValidator(2015)
