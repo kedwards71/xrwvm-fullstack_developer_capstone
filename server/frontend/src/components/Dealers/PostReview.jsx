@@ -93,9 +93,9 @@ const PostReview = () => {
   return (
     <div>
       <Header/>
-      <div className='card p-10'  style={{margin:"5%"}}>
+      <div className='card leave-review'  style={{margin:"5%"}}>
       <h1 style={{color:"darkblue"}}>{dealer.full_name}</h1>
-      <textarea id='review' cols='50' rows='7' onChange={(e) => setReview(e.target.value)}></textarea>
+      <textarea id='review' cols='50' rows='7' onChange={(e) => setReview(e.target.value)} placeholder='Leave a review here'></textarea>
       <div className='input_field'>
       Purchase Date <input type="date" onChange={(e) => setDate(e.target.value)}/>
       </div>
