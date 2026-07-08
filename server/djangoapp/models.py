@@ -44,5 +44,6 @@ class CarModel(models.Model):
         ])
     # - Any other fields you would like to include in car model
     # - __str__ method to print a car make object
+
     def __str__(self):
         return self.name
