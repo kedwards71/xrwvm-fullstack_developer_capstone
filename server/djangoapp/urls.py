@@ -10,7 +10,7 @@ urlpatterns = [
     path(
         route='register',
         view=views.registration,
-		name='register'
+        name='register'
         ),
 
     # path for login
