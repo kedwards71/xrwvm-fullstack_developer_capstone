@@ -4,6 +4,8 @@
   margin: auto;
   margin-top: 2%;
   background-color: darkturquoise;
+  background:rgba(0,206,209,.6);
+  box-shadow: -10px 10px 20px rgba(0,0,0,0.3);
   min-width: 350px;
   width: 30%;
 }
